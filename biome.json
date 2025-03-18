@@ -109,10 +109,10 @@
   },
   "javascript": {
     "formatter": {
-      "jsxQuoteStyle": "double",
+      "jsxQuoteStyle": "single",
       "quoteProperties": "asNeeded",
-      "trailingCommas": "none",
-      "semicolons": "asNeeded",
+      "trailingCommas": "es5",
+      "semicolons": "always",
       "arrowParentheses": "always",
       "bracketSameLine": false,
       "quoteStyle": "single",
@@ -266,7 +266,8 @@
           "style": {
             "noArguments": "error",
             "noVar": "error",
-            "useConst": "error"
+            "useConst": "error",
+            "useImportType": "error"
           },
           "suspicious": {
             "noClassAssign": "off",
@@ -287,7 +288,11 @@
       "javascript": { "globals": [] },
       "linter": {
         "rules": {
-          "correctness": { "noInnerDeclarations": "off", "noSelfAssign": "off" }
+          "correctness": {
+            "noInnerDeclarations": "off",
+            "noSelfAssign": "off",
+            "noUnusedVariables": "off"
+          }
         }
       }
     },
